@@ -29,4 +29,12 @@ class Snake{
         this.speedX = x;
         this.speedY = y;
     }
+
+    eat(posFood){
+        if(dist(this.x,this.y,posFood.x,posFood.y) < 1){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

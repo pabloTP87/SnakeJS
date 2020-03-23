@@ -23,6 +23,10 @@ function draw(){
     snake.show();
     snake.update();
     food.show();
+
+    if(snake.eat(food)){
+        foodPosition();
+    }
 }
 
 function keyPressed(){
