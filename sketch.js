@@ -5,12 +5,17 @@ let scl = 20;
 function setup(){
     createCanvas(600,600);
     snake = new Snake(300,300,scl,scl);
-
-    let foodX = random(width);
-    let foodY = random(height);
-    food = new Food(floor(foodX/scl)*scl, floor(foodY/scl)*scl,scl,scl),
+    
+    foodPosition();
 
     frameRate(10);
+}
+
+function foodPosition(){
+    let row = floor(random(width)/scl) * scl;
+    let col = floor(random(height)/scl) * scl;
+
+    food = new Food(row, col, scl, scl);
 }
 
 function draw(){

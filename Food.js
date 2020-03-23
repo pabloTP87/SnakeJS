@@ -7,7 +7,7 @@ class Food {
     }
 
     show(){
-        fill(255);
+        fill(255,0,56);
         stroke(4);
         rect(this.x,this.y,this.w,this.h);
     }
