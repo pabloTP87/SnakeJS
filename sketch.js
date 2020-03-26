@@ -9,6 +9,7 @@ function setup(){
     foodPosition();
 
     frameRate(10);
+
 }
 
 function foodPosition(){
